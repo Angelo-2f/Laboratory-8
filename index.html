@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-image: url('images/portfolio.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.85);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-brand span {
+            font-weight: bold;
+            color: #00ced1;
+        }
+
+        .nav-link {
+            font-weight: bold;
+            color: #b0e0e6 !important;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #b0e0e6;
+        }
+
+        .section-title {
+            margin-top: 100px;
+            color: white;
+            text-align: center;
+        }
+
+        .portfolio-card {
+            background-color: rgba(0, 0, 0, 0.6);
+            border: none;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            border-radius: 20px;
+            color: white;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .game-title {
+            font-weight: bold;
+            color: #00ced1;
+        }
+
+        .game-info {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 25px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        .footer a {
+            color: #00ced1;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #b0e0e6;
+        }
+
+        .btn {
+            color: #fff;
+            font-weight: bold;
+            background-color: #1e90ff;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background-color: #00bfff;
+            box-shadow: 0 4px 15px rgba(0, 206, 209, 0.4);
+        }
+
+        .guild-section {
+            margin-top: 60px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 14px;
+        }
+        @media (max-width: 768px) {
+            .portfolio-card {
+                margin-bottom: 20px;
+                padding: 15px;
+            }
+
+            .game-title {
+                font-size: 1.2rem;
+            }
+
+            .game-info h6 {
+                font-size: 0.9rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .section-title p {
+                font-size: 1rem;
+            }
+
+            .footer {
+                padding: 20px 0;
+            }
+
+            .footer .social-icons {
+                margin-top: 15px;
+            }
+        }
+        @media (max-width: 576px) {
+            .navbar-brand img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .navbar-nav .nav-item .nav-link {
+                font-size: 0.9rem;
+            }
+
+            .footer .col-md-6, .footer .col-md-3 {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/AHJIN.webp" alt="Solo Leveling logo" style="width: 60px; height: 60px; border-radius: 50%; border: 2px solid #00ced1;">
+                <span class="ms-2 text-white">Solo Leveling</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active"><i class="fa-solid fa-house px-2"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="WhoWeAre.html"><i class="fa-regular fa-address-card px-2"></i>About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Contact.html" class="nav-link"><i class="fa-regular fa-address-book px-2"></i>Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Service.Detail.html"><i class="fa-solid fa-tools px-2"></i>Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html"><i class="fa-solid fa-image px-2"></i>Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html"><i class="fa-solid fa-comment-dots px-2"></i>Testimonials</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Profile.html"><i class="fa-regular fa-user px-2"></i>Profile Page</a></li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="Logout.html" class="text-decoration-none text-white">
+                        <i class="fa-solid fa-right-from-bracket px-2"></i>Logout
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section-title">
+        <h2>Ahjin Guild Portfolio</h2>
+        <p>Welcome to the Ahjin Guild Portfolio! Here, We showcase some of our favorite S-Rank Raids.</p>
+    </div>
+
+    <div class="container" style="margin-top: 50px;">
+        <div class="row justify-content-center">
+            <div class="col-md-5 portfolio-card">
+                <h2 class="game-title">Raid Title: <b>Jeju Island Raid</b></h2>
+                <div class="game-info p-4">
+                    <h6><i>Enemy:</i> Ant Queen and Ant King Beru</h6>
+                </div>
+                <div class="game-info p-4">
+                    <h6><i>Chapter:</i> 96</h6>
+                </div>
+                <div class="game-info p-4">
+                    <h6><i>Battle Description:</i> In a fierce showdown, Sung Jin-Woo faces off against Beru, his former loyal Shadow Soldier who has evolved into a formidable opponent. The battle showcases Jin-Woo’s mastery of shadow manipulation and strategic prowess as he adapts to Beru's incredible speed and combat skills. Initially, Beru's fierce attacks push Jin-Woo to his limits, but as the fight progresses, Jin-Woo displays his resilience and resourcefulness, ultimately overpowering Beru with a brilliant combination of tactics and his unwavering will.</h6>
+                </div>
+                <div class="game-info p-4">
+                    <h6><i>Key Features:</i>
+                        <br>- High Stakes: The battle takes place in a dangerous S-rank gate, posing significant risks to the hunters involved.
+                        <br>- Character Development: Sung Jin-Woo evolves significantly during this battle, demonstrating his leadership and tactical skills.
+                        <br>- Awakening Powers: Jin-Woo experiences power awakenings, using his unique ability to summon shadows from defeated enemies.</h6>
+                </div>
+            </div>
+
+            <div class="col-md-5 portfolio-card">
+                <h2 class="game-title">Raid Title: <b>S-Rank Gate in Japan</b></h2>
+                <div class="game-info p-4">
+                    <h6><i>Enemy:</i> Legia King of the giants and the Monarch of Beginning</h6>
+                </div>
+                <div class="game-info p-4">
+                    <h6><i>Chapter:</i> 138</h6>
+                </div>
+                <div class="game-info p-4">
+                    <h6><i>Battle Description:</i> In a monumental clash, Sung Jin-Woo, the Shadow Monarch, confronts the Monarch of Beginning, a being with god-like powers capable of manipulating time and space. As they battle, Jin-Woo showcases his unmatched combat skills, summoning his vast army of shadows to counter the Monarch’s devastating attacks. The fight is a spectacular display of agility and strategy, with Jin-Woo tapping into his full potential to overcome the Monarch’s overwhelming abilities. Ultimately, he delivers a decisive blow, solidifying his status as one of the most powerful being.</h6>
+                </div>
+                <div class="game-info p-4">
+                    <h6><i>Key Features:</i>
+                        <br>- Sung Jin-Woo's Challenges: Jin-Woo faces formidable challenges that push him to tap into his full potential as the Shadow Monarch.
+                        <br>- Climactic Battle: The arc culminates in an epic showdown between Jin-Woo and Legia, featuring high-stakes combat and strategic maneuvers.
+                        <br>- Character Growth: Sung Jin-Woo's character development is highlighted as he learns from each battle, setting the stage for future conflicts.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer text-center text-lg-start mt-5 pt-4">
+        <div class="container text-center text-md-start">
+            <div class="row mt-3">
+                <div class="col-md-6 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold">
+                        <i class="fas fa-users"></i> Join the Shadow Army
+                    </h6>
+                    <p>
+                        Step into the world of Solo Leveling! Explore our favorite games, battle powerful foes, and forge unforgettable memories with fellow hunters.
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold">
+                        <i class="fas fa-link"></i> Links
+                    </h6>
+                    <p>
+                        <a href="WhoWeAre.html" class="text-decoration-none">
+                            <i class="fas fa-info-circle"></i> About Us
+                        </a>
+                    </p>
+                    <p>
+                        <a href="contact.html" class="text-decoration-none">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold">
+                        <i class="fas fa-share-alt"></i> Follow Us
+                    </h6>
+                    <p>
+                        <a href="https://www.facebook.com/angelo.padullon.52" class="text-decoration-none">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center py-3">
+        <h6>
+            <i class="fa-solid fa-copyright px-2"></i>Copyright 
+            <b>IT2F Property</b> All Rights Reserved
+        </h6>
+        <p>Designed By: 
+            <a href="https://www.facebook.com/angelo.padullon.52" class="text-decoration-none">Angelo S. Padullon</a>
+        </p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/angelo.padullon.52"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ggOyR0iXCbMQv3XR+Qn3v4Yw5y4e9u9L4Eivg4K5C4h1P4/JmLr9g6zHcEv1Y+3b" crossorigin="anonymous"></script>
+</body>
+
+</html>
